@@ -1,0 +1,88 @@
+/* reset css */
+@import "reset.css";
+
+body {
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.contorls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contorls > .controls__range {
+  margin-bottom: 20px;
+}
+
+.contorls > .controls__range > input {
+  appearance: none;
+  background-color: #222222;
+  width: 100%;
+  height: 3px;
+}
+
+.contorls > .controls__range > input:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.contorls > .controls__range > input::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #eeeeee;
+  border: 1px solid #000000;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.contorls > .controls_btns {
+  margin-bottom: 20px;
+}
+
+.controls_btns > button {
+  all: unset;
+  cursor: pointer;
+  color: #eeeeee;
+  background-color: #222222;
+  padding: 5px 0;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(199, 188, 188), 0 1px 3px rgb(219, 218, 218);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.controls_btns > button:focus,
+.contorls > .controls__colors {
+  transform: scale(0.98);
+}
+
+.contorls > .controls__colors {
+  display: flex;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.controls__colors > .contorols__color {
+  width: 50px;
+  height: 50px;
+  margin: 0 2px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+  cursor: pointer;
+}
